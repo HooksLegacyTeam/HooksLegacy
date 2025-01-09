@@ -1,0 +1,60 @@
+
+Privacy Policy
+Hooks Legacy Development
+We are Keepers of The Sea: Hook’s Legacy – Episode 1
+Introduction
+Hooks Legacy Development ("we," "our," "us"), operated by Daniel Musanni, has developed the mobile game We are Keepers of The Sea: Hook’s Legacy – Episode 1 for Android devices. This Privacy Policy explains how information is collected, used, and shared when you use our game, which integrates Google AdMob for advertisements.
+
+Our game does not require users to create accounts, provide personal data, or grant special permissions. However, advertisements are shown when users voluntarily choose to view them to progress in the game.
+
+Data Collection and Use
+Automatically Collected Information:
+Our game, developed using Unity 6, may collect certain information automatically, including but not limited to:
+
+Type of mobile device you use.
+
+Device’s unique ID and IP address.
+
+Operating system and version.
+
+Information about your interactions with the game.
+
+This data may be used for analytics and to improve the game’s performance.
+
+AdMob Advertising:
+We use Google AdMob to display advertisements within the game. AdMob may collect and process data such as:
+
+Device identifiers (e.g., Advertising ID).
+
+Interaction data related to ads shown in the game.
+AdMob uses this data to serve personalized or non-personalized ads based on your preferences. For more details about how AdMob collects and processes data, please refer to Google’s Privacy Policy: https://policies.google.com/privacy.
+
+Data Sharing and Disclosure
+We do not sell or share your personal data with third parties, except as described in this policy. Specifically:
+
+Data collected automatically or through AdMob may be shared with Google for the purposes of ad delivery and analytics.
+
+Data may be disclosed to comply with legal requirements, such as a court order or other legal processes, or to protect the rights and safety of our users and others.
+
+Data Security
+We are committed to safeguarding the confidentiality and security of your information. While we implement reasonable technical and organizational measures, no method of transmission over the Internet or electronic storage is 100% secure.
+
+Children’s Privacy
+We are Keepers of The Sea: Hook’s Legacy – Episode 1 is not directed toward children under the age of 13. We do not knowingly collect personal information from children. If we discover that such information has been collected, it will be promptly deleted.
+
+Changes to This Privacy Policy
+We may update this Privacy Policy periodically to reflect changes to our practices or for other operational, legal, or regulatory reasons. Users will be notified of updates through the game or by an updated version of this Privacy Policy with a new “Last Updated” date.
+
+Contact Information
+If you have any questions or concerns regarding this Privacy Policy, please contact us:
+Hooks Legacy Development
+Email: wearekeepersofthesea@gmail.com
+
+Last Updated: December 15, 2024
+
+Contact Us
+wearekeepersofthesea@gmail.com
+
+Social Links
+WE ARE KEEPERS OF THE SEA
+Official Page
