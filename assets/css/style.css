@@ -825,6 +825,80 @@ a:hover {
   color: var(--text-muted);
 }
 
+/* ═══════════════ CREDITS ═══════════════ */
+.credits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+.credit-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.credit-card:hover {
+  border-color: var(--border-glow);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glow-gold);
+}
+
+.credit-wanted {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid var(--border);
+}
+
+.credit-info {
+  padding: 24px;
+}
+
+.credit-info h3 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin-bottom: 6px;
+}
+
+.credit-role {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.credit-info p {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  line-height: 1.65;
+  margin-bottom: 12px;
+}
+
+.credit-info p a {
+  color: var(--ocean-bright);
+}
+
+.credit-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--gold);
+}
+
+.credit-link:hover {
+  color: var(--gold-bright);
+}
+
 /* ═══════════════ FOOTER ═══════════════ */
 .site-footer {
   border-top: 1px solid var(--border);
