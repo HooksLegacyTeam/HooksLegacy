@@ -338,31 +338,13 @@ a:hover {
   height: 24px;
 }
 
-.hero-scroll {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  color: var(--text-muted);
-  font-size: 0.75rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  animation: bounce 2s infinite;
+.btn-apple {
+  background: #333;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
 }
 
-.hero-scroll-line {
-  width: 1px;
-  height: 40px;
-  background: linear-gradient(to bottom, var(--gold-dim), transparent);
-}
-
-@keyframes bounce {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(8px); }
+.btn-apple:hover {
+  box-shadow: 0 12px 40px rgba(0,0,0,0.4);
 }
 
 /* ═══════════════ SECTIONS ═══════════════ */
@@ -677,13 +659,21 @@ a:hover {
 }
 
 .store-badge {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   padding: 5px 12px;
   border-radius: var(--radius-pill);
   font-size: 0.65rem;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.store-badge:hover {
+  transform: translateY(-2px);
+  text-decoration: none;
 }
 
 .store-google {
@@ -691,8 +681,18 @@ a:hover {
   color: #fff;
 }
 
+.store-google:hover {
+  background: #2d8f47;
+  color: #fff;
+}
+
 .store-apple {
   background: #555;
+  color: #fff;
+}
+
+.store-apple:hover {
+  background: #444;
   color: #fff;
 }
 
@@ -817,6 +817,22 @@ a:hover {
 .download-badge svg {
   width: 28px;
   height: 28px;
+}
+
+.download-badge-apple {
+  background: #333;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+
+.download-badge-apple:hover {
+  box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+}
+
+.download-stores {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .download-meta {
