@@ -610,6 +610,9 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
+  justify-items: center;
+  max-width: 420px;
+  margin: 0 auto;
 }
 
 .episode-card {
