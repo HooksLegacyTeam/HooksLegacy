@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hook's Legacy — The Captain's Cabin Awaits</title>
-  <meta name="description" content="Hook's Legacy Episode 1: a pirate-themed puzzle adventure set in a 1700s ship cabin. Solve intricate puzzles, uncover hidden secrets, and survive the Kraken's wrath.">
+  <meta name="description" content="Hook's Legacy Episode 1: a pirate-themed puzzle adventure set in a 1700s ship cabin.">
   <meta property="og:title" content="Hook's Legacy — Episode 1">
   <meta property="og:description" content="Step into the captain's cabin. Solve the puzzles. Survive the Kraken.">
   <meta property="og:type" content="website">
@@ -24,13 +24,19 @@
       </a>
       <nav>
         <ul class="header-nav">
-          <li><a href="#screenshots">Screenshots</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#story">Story</a></li>
-          <li><a href="#episodes">Episodes</a></li>
+          <li><a href="#screenshots" data-i18n="nav.screenshots">Screenshots</a></li>
+          <li><a href="#features" data-i18n="nav.features">Features</a></li>
+          <li><a href="#story" data-i18n="nav.story">Story</a></li>
+          <li><a href="#episodes" data-i18n="nav.episodes">Episodes</a></li>
         </ul>
       </nav>
-      <a class="header-cta" href="https://play.google.com/store/apps/details?id=com.HooksLegacyDev.HooksLegacyEp1" target="_blank" rel="noopener">Play Now</a>
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-lang="en" class="active">EN</button>
+          <button type="button" data-lang="it">IT</button>
+        </div>
+        <a class="header-cta" href="https://play.google.com/store/apps/details?id=com.HooksLegacyDev.HooksLegacyEp1" target="_blank" rel="noopener" data-i18n="nav.play">Play Now</a>
+      </div>
     </div>
   </header>
 
@@ -39,35 +45,35 @@
     <section class="hero" id="hero">
       <div class="hero-particles" id="particles"></div>
       <div class="hero-content">
-        <div class="hero-badge">Episode 1 of 10</div>
+        <div class="hero-badge" data-i18n="hero.badge">Episode 1 of 10</div>
         <img class="hero-logo" src="assets/img/logo-hero.webp" alt="Hook's Legacy">
         <h1 class="hero-title">Hook's Legacy</h1>
-        <p class="hero-subtitle">The Captain's Cabin Awaits</p>
-        <p class="hero-tagline">Step into a 1700s pirate ship cabin. Open the mysterious box, uncover hidden clues, and solve intricate puzzles before the Kraken awakens.</p>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">The Captain's Cabin Awaits</p>
+        <p class="hero-tagline" data-i18n="hero.tagline">Step into a 1700s pirate ship cabin. Open the mysterious box, uncover hidden clues, and solve intricate puzzles before the Kraken awakens.</p>
         <div class="hero-cta">
           <a class="btn-play" href="https://play.google.com/store/apps/details?id=com.HooksLegacyDev.HooksLegacyEp1" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
-            Get it on Google Play
+            <span data-i18n="hero.cta">Get it on Google Play</span>
           </a>
         </div>
-        <p class="hero-scroll">Scroll to explore<span class="hero-scroll-line"></span></p>
+        <p class="hero-scroll" data-i18n="hero.scroll">Scroll to explore<span class="hero-scroll-line"></span></p>
       </div>
     </section>
 
     <section class="section section-dark" id="screenshots">
       <div class="container">
         <div class="section-header reveal">
-          <span class="section-eyebrow">Gallery</span>
-          <h2 class="section-title">Inside the Cabin</h2>
-          <p class="section-desc">Explore the mysterious world of Hook's Legacy.</p>
+          <span class="section-eyebrow" data-i18n="gallery.eyebrow">Gallery</span>
+          <h2 class="section-title" data-i18n="gallery.title">Inside the Cabin</h2>
+          <p class="section-desc" data-i18n="gallery.desc">Explore the mysterious world of Hook's Legacy.</p>
         </div>
         <div class="screenshots-carousel reveal">
           <div class="screenshots-track" id="carouselTrack">
-            <div class="screenshot-slide"><img src="assets/img/screenshot-1.webp" alt="The mysterious box" loading="lazy"></div>
-            <div class="screenshot-slide"><img src="assets/img/screenshot-2.webp" alt="Ancient artifacts" loading="lazy"></div>
-            <div class="screenshot-slide"><img src="assets/img/screenshot-3.webp" alt="Puzzle solving" loading="lazy"></div>
-            <div class="screenshot-slide"><img src="assets/img/screenshot-4.webp" alt="The globe" loading="lazy"></div>
-            <div class="screenshot-slide"><img src="assets/img/screenshot-5.webp" alt="The Kraken awaits" loading="lazy"></div>
+            <div class="screenshot-slide"><img src="assets/img/screenshot-1.webp" alt="Screenshot 1" loading="lazy"></div>
+            <div class="screenshot-slide"><img src="assets/img/screenshot-2.webp" alt="Screenshot 2" loading="lazy"></div>
+            <div class="screenshot-slide"><img src="assets/img/screenshot-3.webp" alt="Screenshot 3" loading="lazy"></div>
+            <div class="screenshot-slide"><img src="assets/img/screenshot-4.webp" alt="Screenshot 4" loading="lazy"></div>
+            <div class="screenshot-slide"><img src="assets/img/screenshot-5.webp" alt="Screenshot 5" loading="lazy"></div>
           </div>
           <div class="carousel-controls">
             <button class="carousel-btn" id="prevBtn" aria-label="Previous">&#8592;</button>
@@ -88,30 +94,30 @@
     <section class="section" id="features">
       <div class="container">
         <div class="section-header reveal">
-          <span class="section-eyebrow">Gameplay</span>
-          <h2 class="section-title">What Awaits You</h2>
-          <p class="section-desc">A handcrafted puzzle experience inspired by the greatest escape room games.</p>
+          <span class="section-eyebrow" data-i18n="features.eyebrow">Gameplay</span>
+          <h2 class="section-title" data-i18n="features.title">What Awaits You</h2>
+          <p class="section-desc" data-i18n="features.desc">A handcrafted puzzle experience inspired by the greatest escape room games.</p>
         </div>
         <div class="features-grid">
           <div class="feature-card reveal reveal-delay-1">
             <div class="feature-icon">&#x1F50D;</div>
-            <h3>Interactive Puzzles</h3>
-            <p>Examine every object, rotate, zoom, and interact with intricate mechanisms to uncover hidden secrets.</p>
+            <h3 data-i18n="features.f1.title">Interactive Puzzles</h3>
+            <p data-i18n="features.f1.desc">Examine every object, rotate, zoom, and interact with intricate mechanisms to uncover hidden secrets.</p>
           </div>
           <div class="feature-card reveal reveal-delay-2">
             <div class="feature-icon">&#x1F3F0;</div>
-            <h3>Immersive Atmosphere</h3>
-            <p>Stunning graphics and atmospheric music transport you to a 1700s pirate ship cabin.</p>
+            <h3 data-i18n="features.f2.title">Immersive Atmosphere</h3>
+            <p data-i18n="features.f2.desc">Stunning graphics and atmospheric music transport you to a 1700s pirate ship cabin.</p>
           </div>
           <div class="feature-card reveal reveal-delay-3">
             <div class="feature-icon">&#x1F4DC;</div>
-            <h3>Deep Mystery</h3>
-            <p>Ancient artifacts, cryptic medallions, and a mysterious flute — every object tells a story.</p>
+            <h3 data-i18n="features.f3.title">Deep Mystery</h3>
+            <p data-i18n="features.f3.desc">Ancient artifacts, cryptic medallions, and a mysterious flute — every object tells a story.</p>
           </div>
           <div class="feature-card reveal reveal-delay-4">
             <div class="feature-icon">&#x1F30A;</div>
-            <h3>Epic Saga</h3>
-            <p>The first episode of a 10-part adventure full of mystery, danger, and the fury of the Kraken.</p>
+            <h3 data-i18n="features.f4.title">Epic Saga</h3>
+            <p data-i18n="features.f4.desc">The first episode of a 10-part adventure full of mystery, danger, and the fury of the Kraken.</p>
           </div>
         </div>
       </div>
@@ -121,17 +127,17 @@
       <div class="container">
         <div class="story-content">
           <div class="story-text reveal">
-            <span class="section-eyebrow">The Story</span>
-            <h2>Uncover the Secrets of the Doomed Cabin</h2>
-            <p>You awaken in the captain's cabin of an ancient pirate ship. Before you sits a <span class="highlight">mysterious box</span>, covered in cryptic symbols and locked with mechanisms unknown to modern men.</p>
-            <p>Open it. Examine the coins, the <span class="highlight">ancient hook</span>, the globe that seems to move on its own. Every corner hides a clue. Every puzzle brings you closer to the truth — and closer to the <span class="highlight">Kraken's fury</span>.</p>
-            <p>Do you have what it takes to solve the final puzzle and survive?</p>
+            <span class="section-eyebrow" data-i18n="story.eyebrow">The Story</span>
+            <h2 data-i18n="story.title">Uncover the Secrets of the Doomed Cabin</h2>
+            <p data-i18n="story.p1">You awaken in the captain's cabin of an ancient pirate ship. Before you sits a <span class="highlight" data-i18n="story.p1.hl">mysterious box</span>, covered in cryptic symbols and locked with mechanisms unknown to modern men.</p>
+            <p data-i18n="story.p2">Open it. Examine the coins, the <span class="highlight" data-i18n="story.p2.hl">ancient hook</span>, the globe that seems to move on its own. Every corner hides a clue. Every puzzle brings you closer to the truth — and closer to the <span class="highlight" data-i18n="story.p2.hl2">Kraken's fury</span>.</p>
+            <p data-i18n="story.p3">Do you have what it takes to solve the final puzzle and survive?</p>
           </div>
           <div class="story-visual reveal reveal-delay-2">
             <img class="story-image" src="assets/img/story-image.webp" alt="The captain's cabin">
             <div class="story-badge">
               <div class="story-badge-num">10</div>
-              <div class="story-badge-label">Episodes Planned</div>
+              <div class="story-badge-label" data-i18n="story.badge">Episodes Planned</div>
             </div>
           </div>
         </div>
@@ -141,29 +147,33 @@
     <section class="section" id="episodes">
       <div class="container">
         <div class="section-header reveal">
-          <span class="section-eyebrow">The Saga</span>
-          <h2 class="section-title">10 Episodes of Mystery</h2>
-          <p class="section-desc">Hook's Legacy is a 10-part adventure. Episode 1 is available now.</p>
+          <span class="section-eyebrow" data-i18n="episodes.eyebrow">The Saga</span>
+          <h2 class="section-title" data-i18n="episodes.title">10 Episodes of Mystery</h2>
+          <p class="section-desc" data-i18n="episodes.desc">Hook's Legacy is a 10-part adventure. Episode 1 is available now.</p>
         </div>
         <div class="episodes-grid reveal">
-          <div class="episode-card current">
+          <a class="episode-card episode-current" href="https://play.google.com/store/apps/details?id=com.HooksLegacyDev.HooksLegacyEp1" target="_blank" rel="noopener">
+            <img class="episode-thumb" src="assets/img/episode-1.webp" alt="Episode 1">
             <div class="episode-num">I</div>
-            <div class="episode-title">The Captain's Cabin</div>
-            <div class="episode-status">Available Now</div>
-          </div>
-          <div class="episode-card locked"><div class="episode-num">II</div><div class="episode-title">TBA</div><div class="episode-status">Coming Soon</div></div>
-          <div class="episode-card locked"><div class="episode-num">III</div><div class="episode-title">TBA</div><div class="episode-status">Coming Soon</div></div>
-          <div class="episode-card locked"><div class="episode-num">IV</div><div class="episode-title">TBA</div><div class="episode-status">Coming Soon</div></div>
-          <div class="episode-card locked"><div class="episode-num">V</div><div class="episode-title">TBA</div><div class="episode-status">Coming Soon</div></div>
-          <div class="episode-card locked"><div class="episode-num">VI</div><div class="episode-title">TBA</div><div class="episode-status">Coming Soon</div></div>
-          <div class="episode-card locked"><div class="episode-num">VII</div><div class="episode-title">TBA</div><div class="episode-status">Coming Soon</div></div>
-          <div class="episode-card locked"><div class="episode-num">VIII</div><div class="episode-title">TBA</div><div class="episode-status">Coming Soon</div></div>
-          <div class="episode-card locked"><div class="episode-num">IX</div><div class="episode-title">TBA</div><div class="episode-status">Coming Soon</div></div>
-          <div class="episode-card locked"><div class="episode-num">X</div><div class="episode-title">TBA</div><div class="episode-status">Coming Soon</div></div>
+            <div class="episode-title" data-i18n="episodes.e1.title">The Captain's Cabin</div>
+            <div class="episode-stores">
+              <span class="store-badge store-google" data-i18n="episodes.google">Google Play</span>
+              <span class="store-badge store-apple" data-i18n="episodes.apple">App Store</span>
+            </div>
+          </a>
+          <div class="episode-card episode-locked"><div class="episode-num">II</div><div class="episode-title">TBA</div><div class="episode-status" data-i18n="episodes.coming">Coming Soon</div></div>
+          <div class="episode-card episode-locked"><div class="episode-num">III</div><div class="episode-title">TBA</div><div class="episode-status" data-i18n="episodes.coming">Coming Soon</div></div>
+          <div class="episode-card episode-locked"><div class="episode-num">IV</div><div class="episode-title">TBA</div><div class="episode-status" data-i18n="episodes.coming">Coming Soon</div></div>
+          <div class="episode-card episode-locked"><div class="episode-num">V</div><div class="episode-title">TBA</div><div class="episode-status" data-i18n="episodes.coming">Coming Soon</div></div>
+          <div class="episode-card episode-locked"><div class="episode-num">VI</div><div class="episode-title">TBA</div><div class="episode-status" data-i18n="episodes.coming">Coming Soon</div></div>
+          <div class="episode-card episode-locked"><div class="episode-num">VII</div><div class="episode-title">TBA</div><div class="episode-status" data-i18n="episodes.coming">Coming Soon</div></div>
+          <div class="episode-card episode-locked"><div class="episode-num">VIII</div><div class="episode-title">TBA</div><div class="episode-status" data-i18n="episodes.coming">Coming Soon</div></div>
+          <div class="episode-card episode-locked"><div class="episode-num">IX</div><div class="episode-title">TBA</div><div class="episode-status" data-i18n="episodes.coming">Coming Soon</div></div>
+          <div class="episode-card episode-locked"><div class="episode-num">X</div><div class="episode-title">TBA</div><div class="episode-status" data-i18n="episodes.coming">Coming Soon</div></div>
         </div>
         <div class="episodes-progress reveal">
           <div class="progress-bar"><div class="progress-fill"></div></div>
-          <span class="progress-label">1 of 10 episodes released</span>
+          <span class="progress-label" data-i18n="episodes.progress">1 of 10 episodes released</span>
         </div>
       </div>
     </section>
@@ -171,15 +181,15 @@
     <section class="download-section" id="download">
       <div class="download-content">
         <div class="section-header reveal">
-          <span class="section-eyebrow">Available Now</span>
-          <h2 class="download-title">Begin Your Adventure</h2>
-          <p class="download-subtitle">Download Hook's Legacy Episode 1 and step into the captain's doomed cabin.</p>
+          <span class="section-eyebrow" data-i18n="download.eyebrow">Available Now</span>
+          <h2 class="download-title" data-i18n="download.title">Begin Your Adventure</h2>
+          <p class="download-subtitle" data-i18n="download.desc">Download Hook's Legacy Episode 1 and step into the captain's doomed cabin.</p>
         </div>
         <a class="download-badge reveal" href="https://play.google.com/store/apps/details?id=com.HooksLegacyDev.HooksLegacyEp1" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
-          Get it on Google Play
+          <span data-i18n="download.cta">Get it on Google Play</span>
         </a>
-        <p class="download-meta reveal">Free to play · Android 7.0+ · No ads required to progress</p>
+        <p class="download-meta reveal" data-i18n="download.meta">Free to play · Android 7.0+ · No ads required to progress</p>
       </div>
     </section>
 
@@ -193,22 +203,21 @@
             <img src="assets/img/logo-sm.webp" alt="Hook's Legacy">
             <span>Hook's Legacy</span>
           </div>
-          <p>A 10-part pirate puzzle adventure saga. Episode 1 is available now on Android.</p>
+          <p data-i18n="footer.desc">A 10-part pirate puzzle adventure saga. Episode 1 is available now on Android.</p>
         </div>
         <div class="footer-links">
-          <h5>Game</h5>
+          <h5 data-i18n="footer.game">Game</h5>
           <ul>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#screenshots">Screenshots</a></li>
-            <li><a href="#episodes">Episodes</a></li>
+            <li><a href="#features" data-i18n="nav.features">Features</a></li>
+            <li><a href="#screenshots" data-i18n="nav.screenshots">Screenshots</a></li>
+            <li><a href="#episodes" data-i18n="nav.episodes">Episodes</a></li>
             <li><a href="https://play.google.com/store/apps/details?id=com.HooksLegacyDev.HooksLegacyEp1" target="_blank" rel="noopener">Google Play</a></li>
           </ul>
         </div>
         <div class="footer-links">
-          <h5>Legal</h5>
+          <h5 data-i18n="footer.legal">Legal</h5>
           <ul>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="https://github.com/HooksLegacyTeam/HooksLegacy" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
           </ul>
         </div>
       </div>
@@ -219,6 +228,7 @@
     </div>
   </footer>
 
+  <script src="assets/js/i18n.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -141,6 +141,39 @@ a:hover {
   text-decoration: none;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.lang-switch {
+  display: inline-flex;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  padding: 3px;
+}
+
+.lang-switch button {
+  border: 0;
+  background: transparent;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: all 0.2s;
+  letter-spacing: 0.05em;
+}
+
+.lang-switch button.active {
+  background: var(--gold);
+  color: #fff;
+}
+
 .header-cta {
   display: inline-flex;
   align-items: center;
@@ -605,29 +638,67 @@ a:hover {
   text-align: center;
   transition: all 0.3s;
   position: relative;
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
-.episode-card.current {
+.episode-card:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.episode-current {
   border-color: var(--gold-dim);
   box-shadow: var(--shadow-glow-gold);
+  cursor: pointer;
 }
 
-.episode-card.current::after {
-  content: 'PLAY NOW';
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  padding: 4px 10px;
-  background: var(--gold);
-  color: #fff;
-  font-size: 0.6rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
+.episode-current:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(212,165,116,0.2);
+}
+
+.episode-thumb {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  margin-bottom: 16px;
+  border: 1px solid var(--border);
+}
+
+.episode-stores {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.store-badge {
+  display: inline-block;
+  padding: 5px 12px;
   border-radius: var(--radius-pill);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
-.episode-card.locked {
-  opacity: 0.5;
+.store-google {
+  background: #34a853;
+  color: #fff;
+}
+
+.store-apple {
+  background: #555;
+  color: #fff;
+}
+
+.episode-locked {
+  opacity: 0.45;
+  pointer-events: none;
 }
 
 .episode-num {
@@ -638,7 +709,7 @@ a:hover {
   margin-bottom: 8px;
 }
 
-.episode-card.locked .episode-num {
+.episode-locked .episode-num {
   color: var(--text-muted);
 }
 
