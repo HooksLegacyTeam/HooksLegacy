@@ -96,4 +96,30 @@
     });
   });
 
+  // ═══════════ COOKIE CONSENT ═══════════
+  const CONSENT_KEY = 'hl-cookie-consent';
+  const cookieBanner = document.getElementById('cookieBanner');
+  const cookieAccept = document.getElementById('cookieAccept');
+  const cookieReject = document.getElementById('cookieReject');
+
+  function hideBanner() {
+    if (cookieBanner) cookieBanner.classList.add('hidden');
+  }
+
+  if (localStorage.getItem(CONSENT_KEY)) {
+    hideBanner();
+  } else if (cookieAccept && cookieReject) {
+    cookieAccept.addEventListener('click', () => {
+      localStorage.setItem(CONSENT_KEY, 'accepted');
+      const lang = localStorage.getItem('hl-lang') || document.documentElement.lang || 'en';
+      localStorage.setItem('hl-lang', lang);
+      hideBanner();
+      window.location.reload();
+    });
+    cookieReject.addEventListener('click', () => {
+      localStorage.setItem(CONSENT_KEY, 'rejected');
+      hideBanner();
+    });
+  }
+
 })();

@@ -63,7 +63,10 @@
       'footer.desc': 'A 10-part pirate puzzle adventure saga. Episode 1 is available now on Android.',
       'footer.game': 'Game',
       'footer.legal': 'Legal',
-      'footer.privacy': 'Privacy Policy'
+      'footer.privacy': 'Privacy Policy',
+      'cookie.text': 'This site uses localStorage to remember your language preference. No tracking, no analytics, no third-party cookies.',
+      'cookie.accept': 'Accept',
+      'cookie.reject': 'Reject'
     },
     it: {
       'nav.screenshots': 'Screenshot',
@@ -126,23 +129,34 @@
       'footer.desc': 'Una saga di puzzle pirata in 10 parti. L\'Episodio 1 \u00e8 disponibile ora su Android.',
       'footer.game': 'Gioco',
       'footer.legal': 'Legale',
-      'footer.privacy': 'Privacy Policy'
+      'footer.privacy': 'Privacy Policy',
+      'cookie.text': 'Questo sito usa localStorage per ricordare la tua preferenza linguistica. Nessun tracciamento, nessuna analytics, nessun cookie di terze parti.',
+      'cookie.accept': 'Accetta',
+      'cookie.reject': 'Rifiuta'
     }
   };
 
   const STORAGE_KEY = 'hl-lang';
+  const CONSENT_KEY = 'hl-cookie-consent';
+
+  function hasConsent() {
+    return localStorage.getItem(CONSENT_KEY) === 'accepted';
+  }
 
   function getLang() {
+    if (!hasConsent()) return 'en';
     return localStorage.getItem(STORAGE_KEY) || 'en';
   }
 
   function setLang(lang) {
-    localStorage.setItem(STORAGE_KEY, lang);
     document.documentElement.lang = lang;
     applyTranslations(lang);
     document.querySelectorAll('.lang-switch button').forEach(btn => {
       btn.classList.toggle('active', btn.dataset.lang === lang);
     });
+    if (hasConsent()) {
+      localStorage.setItem(STORAGE_KEY, lang);
+    }
   }
 
   function applyTranslations(lang) {
